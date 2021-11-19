@@ -24,12 +24,9 @@ function userType(input){
     p.innerHTML = 'Showing result for ' + input;
 }
 
-// //show Music in UI 
+// Send Request and Get Data
 function sendRequest(input){
-    typeByUser = input.split(' ').join('+')
-//     /*2. do the data stuff with the API 
-//     =================================
-//     */
+    typeByUser = input.split(' ').join('+');
     var url = `https://api.lyrics.ovh/suggest/${typeByUser}`;
     // AJAX Request
     var musicData = new XMLHttpRequest();
