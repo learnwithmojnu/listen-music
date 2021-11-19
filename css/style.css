@@ -51,7 +51,7 @@ input {
     margin: 1%;
     display: inline-block;
 }
-.btn2 {
+.playlist-btn {
    width: 100%;
    text-align: center;
    background-color: green;
@@ -71,6 +71,10 @@ input {
 }
 .audio-area {
     width: 100%;
+    text-align: center; 
+}
+.playlist {
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    
 }

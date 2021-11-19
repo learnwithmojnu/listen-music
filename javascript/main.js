@@ -1,5 +1,4 @@
 //1. Grab the input text
-
 document.querySelector('.btn1').addEventListener('click', function(){
     var input = document.querySelector('input').value;
     userType(input);
@@ -47,7 +46,7 @@ function pushToDOM(inputValue) {
         card.innerHTML += `
         <div class="card">
             <p class="song-title">${music.title}</p>
-            <button class="btn2">+ Add to Playlist</button>
+            <button class="playlist-btn" onclick="playlistButton()">+ Add to Playlist</button>
             <img src="${music.artist.picture_big}" class="image"/>
             <div class="audio-area">
                 <audio controls class="audio-area">
@@ -57,6 +56,13 @@ function pushToDOM(inputValue) {
             </div>
         </div>`);
 }
+
+// for playlist 
+function playlistButton(){
+    var width30 = document.querySelector('.width-30');
+    width30.innerHTML = `<h3 class="playlist">Developer is sleeping</h3>`;
+}
+
 function clear(item) {
      item.innerHTML = '';
 }
